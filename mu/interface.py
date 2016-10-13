@@ -418,7 +418,7 @@ class FileTabs(QTabWidget):
         if (modified):
             msg = 'There is un-saved work, closing the tab will cause you ' \
                   'to lose it.'
-            if window.show_confirmation(msg) == QMessageBox.Cancel:
+            if window.show_confirmation(msg, parent=window) == QMessageBox.Cancel:
                 return
         super(FileTabs, self).removeTab(tab_id)
 

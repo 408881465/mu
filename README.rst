@@ -10,13 +10,15 @@ ctrl-V (paste). It has been tested only under Linux.
 Installation
 ------------
 
-Run Mu from source. You will need to install python3-pyqt5 and python3-serial
+Clone Mu from source. You will need to install python3-pyqt5 and python3-serial,
+also the Python style checking libraries
 
 ::
 
     $ sudo apt-get install python3-pyqt5
     $ sudo apt-get install python3-serial
-
+    pip install pycodestyle
+    apt-get install pyflakes
 
 Linux
 +++++
